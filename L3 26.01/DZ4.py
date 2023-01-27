@@ -6,8 +6,7 @@ if z == '+':
 elif z == '-':
     print(x, z, y, '=', (x-y))
 elif z == '*':
-    w = x * y
-    print(x, z, y, '=', w)
+    print(x, z, y, '=', (x*y))
 elif z == '/' and y != 0:
     print(x, z, y, '=', (x/y))
 else:
