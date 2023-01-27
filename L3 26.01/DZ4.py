@@ -1,6 +1,6 @@
 x = float(input('Type 1st number:'))
 z = input('Indicate action (+,-,*,/):')
-y = float(input('Input second number:'))
+y = float(input('Type 2nd number:'))
 if z == '+':
     print(x, z, y, '=', (x+y))
 elif z == '-':
