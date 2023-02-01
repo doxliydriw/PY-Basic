@@ -1,3 +1,2 @@
-x = float(input('number'))
-x = x + 20
-print("x is:", x)
+x = 0.5
+print(type(x))
