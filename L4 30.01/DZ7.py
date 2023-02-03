@@ -14,6 +14,4 @@ if lst.count(x) > 1:
         lst.pop(lst.index(x))
         lst.append(x)
         y = y + 1
-    else:
-        print(lst)
-print(x, 'count is:', lst.count(x))
+print(lst)

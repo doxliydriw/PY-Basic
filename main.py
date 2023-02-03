@@ -1,2 +1,3 @@
-x = 0.5
-print(type(x))
+i = 2
+i = i % 2
+print(i)
