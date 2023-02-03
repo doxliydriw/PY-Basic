@@ -16,4 +16,4 @@ if lst.count(x) > 1:
         y = y + 1
     else:
         print(lst)
-print('X count is:', lst.count(x))
+print(x, 'count is:', lst.count(x))
