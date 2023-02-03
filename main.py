@@ -1,3 +1,2 @@
-i = 2
-i = i % 2
-print(i)
+lst = [1, 3, 5]
+print(lst[-1])
