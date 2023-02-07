@@ -1,15 +1,12 @@
 import keyword
 import string
-x = input('Input User name:')
-y = string.punctuation
+y = string.punctuation + string.ascii_uppercase
 y = list(y) + [' ']
-z = 0
 del(y[26])
+z = 0
+x = input('Input User name:')
 for i in x:
-    if i.isupper():
-        print('False')
-        break
-    elif i in y:
+    if i in y:
         print('False')
         break
     elif keyword.iskeyword(x):
