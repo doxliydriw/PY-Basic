@@ -14,5 +14,5 @@ while b in a:
         print(x, z, y, '=', (x/y))
     else:
         print('invalid data')
-    b = input('Another iteration? Y/N')
+    b = input('Another operation? Y/N')
 print('The end')
