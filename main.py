@@ -1,2 +1,3 @@
 str1 = ' I Like Python'
-print(str1.replace(" ", ""))
+print(len(str1.split()))
+print((str1.split()))

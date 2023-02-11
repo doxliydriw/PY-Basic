@@ -5,7 +5,7 @@ x = input('Input string:')
 for i in y:
     x = x.replace(i, "")
 x = '#' + (x.title()).replace(" ", "")
-x1 = list(x)
-if len(x1) > 140:
+if len(x) > 140:
     x = x[:140]
 print(x)
+print(len(x))
