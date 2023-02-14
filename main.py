@@ -1,16 +1,6 @@
-num = input("enter a number")
-n = int(num)
-product = 1
-for i in num:
-    while n != 0:
-        rem = n % 10
-        product = product * rem
-        n = n // 10
-        print(product)
-    if product >= 9:
-        n = product
-        product = 1
-        num = n
-        continue
-print(product)
-range
+print(ord(','))
+    # день, (chr(1076)+chr(1077)+chr(1085)+chr(1100))
+    # дня, (chr(1076)+chr(1085)+chr(1103))
+    # дней, (chr(1076)+chr(1085)+chr(1077)+chr(1081))
+a = (chr(1076)+chr(1085)+chr(1103)), (chr(1076)+chr(1077)+chr(1085)+chr(1100)), (chr(1076)+chr(1085)+chr(1077)+chr(1081))
+print(a)
