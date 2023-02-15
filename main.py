@@ -1,6 +1,6 @@
-print(ord(','))
-    # день, (chr(1076)+chr(1077)+chr(1085)+chr(1100))
-    # дня, (chr(1076)+chr(1085)+chr(1103))
-    # дней, (chr(1076)+chr(1085)+chr(1077)+chr(1081))
-a = (chr(1076)+chr(1085)+chr(1103)), (chr(1076)+chr(1077)+chr(1085)+chr(1100)), (chr(1076)+chr(1085)+chr(1077)+chr(1081))
-print(a)
+def add(a, b):
+    c = a + b
+    return c
+
+d = add(10, 10)
+print(d)
