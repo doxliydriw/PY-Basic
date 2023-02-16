@@ -1,6 +1,7 @@
-text = "greetings, friends"
-text = text.replace(text[0], (text[0]).title(), 1)
-print(text)
-if text[-1] != '.':
-    text += '.'
-print(text)
+text = 'Hello, hello'
+string = 'lo'
+y = text.count(string)
+if y > 1:
+    y = text.find(string) + 1
+    y = text.find(string, y)
+    print(type(y), y)
