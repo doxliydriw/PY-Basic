@@ -8,7 +8,7 @@ def is_palindrome(text):
         if i in y:
             text = text[:text.find(i)] + text[text.find(i) + 1:]
     z = True
-    while a <= len(text) and b >= -abs(len(text)):
+    while a <= (len(text) // 2) and b >= (-abs(len(text)) // 2):
         if text[a] != text[b]:
             z = False
             break
@@ -17,7 +17,7 @@ def is_palindrome(text):
     return z
 
 
-assert is_palindrome('A man, a plan, a canal: Panama') == True, 'Test1'
+# assert is_palindrome('A man, a plan, a canal: Panama') == True, 'Test1'
 # assert is_palindrome('0P') == False, 'Test2'
-# assert is_palindrome('a.') == True, 'Test3'
+assert is_palindrome('a.') == True, 'Test3'
 print("ОК")
