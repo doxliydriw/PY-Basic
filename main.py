@@ -1,7 +1,18 @@
-some_list = [1, 2, 3, 4]
-some_str = "".join([str(y) for y in some_list])
-some_list.clear()
-some_str = str(int(some_str) + 1)
-for i in some_str:
-    some_list.append(int(i))
-print(some_list)
+import string
+text = 'A man, a plan, a canal: Panama'
+a = 0
+b = -1
+text = text.lower()
+y = string.punctuation + ' '
+for i in text:
+    if i in y:
+        text = text[:text.find(i)] + text[text.find(i) + 1:]
+print(text)
+while a < len(text):
+    if text[a] != text[b]:
+        z = False
+        break
+    z = True
+    a += 1
+    b -= 1
+print(z)
