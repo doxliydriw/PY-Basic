@@ -1,5 +1,5 @@
 def exponent(value) -> int:
-    """Function returns 'value' to the power of 'n'"""
+    """Function returns 'value' to the power of '2'"""
     return value ** 2
 
 
