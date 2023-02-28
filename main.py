@@ -1,14 +1,15 @@
-nmbr_set =  (-2, -1.2, -6, -9, -45)
-nmbr_set = list(nmbr_set)
-maxnmbr = nmbr_set[0]
-minnmbr = nmbr_set[0]
-for i in nmbr_set:
-    print(i)
-    if i > maxnmbr:
-        print('max', i > maxnmbr)
-        maxnmbr = i
-    elif i < minnmbr:
-        print('min', i < maxnmbr)
-        minnmbr = i
-print(maxnmbr,  minnmbr)
-print(maxnmbr - (minnmbr))
+def exponent(value):
+    """Function returns 'value' to the power of '2'"""
+    return value ** 2
+
+
+def count(start, end, func):
+    """Generator of set based on 'func' logic  defined by user returns values staring
+         from 'start' position up to 'end' position in set defined by user"""
+    for i in range(end):
+        i += 1
+        yield start
+        start = func(start)
+
+
+print(list(count(2, 7, exponent)))

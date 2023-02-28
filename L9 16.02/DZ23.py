@@ -2,9 +2,10 @@ def popular_words (text, findlst) -> dict:
     '''Function which gets the list of strings, calculates how many times each string is found in given sentance and
     generates the dictionary where keys are the srtings from the list and values are number strings found in sentance'''
     dict_one = {}
+    text = text.lower().split()
     for i in findlst:
-        dict_one[i] = text.lower().split().count(i)
-        print(dict_one)
+        dict_one[i] = text.count(i)
+        # print(dict_one)
     return(dict_one)
 
 
