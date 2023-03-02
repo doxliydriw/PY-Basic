@@ -1,25 +1,12 @@
 def first_word(text) -> str:
-    import string
-    y = (list(string.punctuation))
-    y = (y[:6] + y[7:])
-    y = set(y)
-    string = text.split()
-    i = 0
-    while i <= len(string):
-        x = set(string[i])
-        x.difference_update(y)
-        if len(list(x)) != 0:
-            x = set(string[i])
-            a = string[i]
-            z = x.copy()
-            if x.isdisjoint(y):
-                return a
-            z = list(z.intersection(y))
-            w = z[0]
-            b = a.replace(w, ' ')
-            a = b.split()
-            return a[0]
-        i += 1
+    w = ','
+    z = '.'
+    while w in text:
+        text = text.replace(w, ' ')
+    while z in text:
+        text = text.replace(z, ' ')
+    text = text.split()
+    return text[0]
 
 
 assert first_word("Hello world") == "Hello", 'Test1'
