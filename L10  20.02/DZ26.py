@@ -1,10 +1,6 @@
 def first_word(text) -> str:
-    w = ','
-    z = '.'
-    while w in text:
-        text = text.replace(w, ' ')
-    while z in text:
-        text = text.replace(z, ' ')
+    text = text.replace('.', ' ')
+    text = text.replace(',', ' ')
     text = text.split()
     return text[0]
 
