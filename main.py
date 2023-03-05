@@ -1,9 +1,5 @@
-end = 3
-i = 2
-while i <= end:
-    for x in range(2, int(i ** 0.5 + 1)):
-        if i % x == 0:
-            break
-    else:
-        print(i)
-    i += 1
+end = 1000
+x = 2
+while x ** 3 <= end:
+    print(x ** 3)
+    x = x + 1
