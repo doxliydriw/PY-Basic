@@ -53,7 +53,11 @@ st2 = Student('Female', 25, 'Liza', 'Taylor', 'AN145')
 gr = Group('PD1')
 gr.add_student(st1)
 gr.add_student(st2)
+print(gr)
 assert str(gr.find_student('Jobs')) == str(st1), 'Test1'
 assert gr.find_student('Jobs2') is None, 'Test2'
+
 gr.delete_student('Taylor')
-print(gr)  # Only one student
+print(gr) # Only one student
+
+gr.delete_student('Taylor') # No error!
